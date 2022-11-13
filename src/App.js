@@ -34,7 +34,8 @@ function App() {
 
     const resetGame = () =>{
         setScore(0);
-        setDiceArray([0])
+        setDiceArray([0]);
+        setDiceImageSource(`images/dice-question.png`);
     }
 
   return (

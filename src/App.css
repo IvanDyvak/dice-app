@@ -1,18 +1,4 @@
 
-/*@media (prefers-reduced-motion: no-preference) {*/
-/*  .App-logo {*/
-/*    animation: App-logo-spin infinite 20s linear;*/
-/*  }*/
-/*}*/
-
-/*@keyframes App-logo-spin {*/
-/*  from {*/
-/*    transform: rotate(0deg);*/
-/*  }*/
-/*  to {*/
-/*    transform: rotate(360deg);*/
-/*  }*/
-/*}*/
 img{
     margin: 0 auto;
     width: 100%;
@@ -20,10 +6,25 @@ img{
 }
 .App-header{
     width: 100%;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 .App-logo{
     margin: 20px auto;
     max-width: 80px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .dice-image{
     max-width: 80px;
