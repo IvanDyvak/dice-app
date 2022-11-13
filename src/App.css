@@ -1,0 +1,74 @@
+
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*  .App-logo {*/
+/*    animation: App-logo-spin infinite 20s linear;*/
+/*  }*/
+/*}*/
+
+/*@keyframes App-logo-spin {*/
+/*  from {*/
+/*    transform: rotate(0deg);*/
+/*  }*/
+/*  to {*/
+/*    transform: rotate(360deg);*/
+/*  }*/
+/*}*/
+img{
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+}
+.App-header{
+    width: 100%;
+}
+.App-logo{
+    margin: 20px auto;
+    max-width: 80px;
+}
+.dice-image{
+    max-width: 80px;
+}
+.dice-gif{
+    max-width: 250px;
+}
+.score-line{
+    text-align: center;
+}
+.player-block{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.player-block__img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 280px;
+}
+.reset-btn,
+.roll-btn{
+    width: 95px;
+    position: relative;
+    display: block;
+    background: green;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+.reset-btn{
+    background: tomato;
+}
+.roll-btn:hover{
+    background: lightgreen;
+}
