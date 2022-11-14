@@ -31,7 +31,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/User/Desktop/OpenServer/domains/bored-app-react",
+    "last_opened_file_path": "C:/Users/User/Desktop/OpenServer/domains/dice-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -49,7 +51,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668282896326</updated>
-      <workItem from="1668282897612" duration="16010000" />
+      <workItem from="1668282897612" duration="16075000" />
+      <workItem from="1668415388167" duration="2001000" />
     </task>
     <servers />
   </component>

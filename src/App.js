@@ -2,6 +2,7 @@ import './App.css';
 import React, {useState, useEffect} from "react";
 
 
+
 function App() {
     // const [ diceNumber, setDiceNumber ] = useState(0);
     const [ diceImageSource, setDiceImageSource ] = useState(`images/dice-question.png`);
@@ -24,7 +25,6 @@ function App() {
         setShowDice(false);
 
         setTimeout(() => {
-            // setDiceNumber(Math.trunc(Math.random() * 6) + 1);
             const diceNumber = Math.trunc(Math.random() * 6) + 1;
             setDiceArray([...diceArray, diceNumber]);
             setDiceImageSource(`images/dice-${diceNumber}.png`);
@@ -38,6 +38,10 @@ function App() {
         setDiceImageSource(`images/dice-question.png`);
     }
 
+    const styles = {
+        width: '80px',
+        };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -50,8 +54,8 @@ function App() {
         <div className="player-block">
             <div className="player-block__img">
                 { showDice ?
-                    <img src={diceImageSource} className="dice-image" alt="dice facet" /> :
-                    <img src='images/dice-gif.gif' className="dice-gif" alt="gif image" />
+                    <img src={diceImageSource} className="dice-image" style={styles}  alt="dice facet" /> :
+                    <img src='images/dice-gif.gif' className="dice-gif" width="250" alt="gif image" />
                 }
             </div>
             <button className="roll-btn" onClick={rollDice}>Roll Dice!</button>
