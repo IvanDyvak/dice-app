@@ -47,18 +47,24 @@ function App() {
       <header className="App-header">
         <img src='images/logo.png' className="App-logo" alt="logo" />
       </header>
-        <button className="reset-btn" onClick={resetGame}>Reset</button>
+        <div className="btn-block">
+            <button className="roll-btn" onClick={rollDice}>Roll Dice!</button>
+
+            <button className="reset-btn" onClick={resetGame}>Reset</button>
+        </div>
 
         <h4 className="score-line">Score: {score}</h4>
 
         <div className="player-block">
             <div className="player-block__img">
+                {/*<img src={diceImageSource} className="dice-image" style={styles}  alt="dice facet" />*/}
+                {/*<img src='images/dice-gif.gif' className="dice-gif" width="250" alt="gif image" />*/}
                 { showDice ?
                     <img src={diceImageSource} className="dice-image" style={styles}  alt="dice facet" /> :
                     <img src='images/dice-gif.gif' className="dice-gif" width="250" alt="gif image" />
                 }
             </div>
-            <button className="roll-btn" onClick={rollDice}>Roll Dice!</button>
+            {/*<button className="roll-btn" onClick={rollDice}>Roll Dice!</button>*/}
         </div>
 
     </div>
