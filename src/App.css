@@ -125,17 +125,20 @@ img{
     font-weight: 800;
 }
 @media (max-width: 500px){
+    .App-logo {
+        max-width: 50px;
+    }
     .player .name {
         font-size: 2rem;
         margin-top: 1rem;
     }
     .winner-name {
-        top: 82%;
+        top: 85%;
         font-size: 1.5rem;
         text-align: center;
     }
     .reset-btn {
-        top: 10.5rem;
+        top: 8.5rem;
     }
     .score-line {
         padding: 1rem 2rem;
