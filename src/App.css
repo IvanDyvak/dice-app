@@ -38,10 +38,9 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 75px;
 }
 .players-block .player{
-    width: 50%;
+    width: 49%;
     margin: 20px auto;
     display: flex;
     align-items: center;
@@ -84,6 +83,13 @@ img{
     font-weight: 600;
     margin-bottom: 1rem;
 }
+.btn-block{
+    width: 300px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .reset-btn,
 .roll-btn{
     width: 125px;
@@ -93,36 +99,34 @@ img{
     color: #ffffff;
     border: none;
     border-radius: 5px;
-    /*margin: auto;*/
     padding: 15px 0;
     cursor: pointer;
     transition: all .3s;
-    box-shadow: 0px 0rem 5rem 17px rgb(0 0 0 / 25%);
 }
 .reset-btn{
-    position: absolute;
     background: tomato;
-    left: 50%;
-    top: 8.5rem;
-    transform: translateX(-50%);
 }
-.roll-btn{
-    margin: 20px auto;
-}
-.roll-btn:hover{
-    background: lightgreen;
+.roll-btn:hover,
+.reset-btn:hover{
+    box-shadow: 0px 0rem 1rem 3px rgb(0 0 0 / 50%);
 }
 .active-player {
     background-color: lightgray;
 }
-.winner-name{
+.winner-block{
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 38%;
     transform: translateX(-50%);
+}
+.winner-name{
     color: hsl(337deg 51% 39%);
     font-size: 2rem;
     font-weight: 800;
+}
+.disabled{
+    pointer-events: none;
+    cursor: none;
 }
 @media (max-width: 500px){
     .App-logo {
@@ -132,15 +136,22 @@ img{
         font-size: 2rem;
         margin-top: 1rem;
     }
+    .player-block__img{
+        height: 235px;
+    }
+    .winner-block{
+        position: relative;
+        text-align: center;
+        min-height: 45px;
+    }
     .winner-name {
-        top: 85%;
         font-size: 1.5rem;
         text-align: center;
-    }
-    .reset-btn {
-        top: 8.5rem;
+        margin: 0;
     }
     .score-line {
         padding: 1rem 2rem;
+        width: 40%;
+        font-size: 1rem;
     }
 }

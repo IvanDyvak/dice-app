@@ -13,6 +13,8 @@ function App() {
     const [ showDice, setShowDice ] = useState(true);
     const [ winner, setWinner ] = useState(false);
     const [ winnerText, setWinnerText ] = useState('');
+    const [ disabled, setDisabled ] = useState(false);
+
 
     function addPoints(array){
         const updatedSum = array.reduce((sum, current) =>{
@@ -29,6 +31,7 @@ function App() {
         setWinner(false);
         setWinnerText('');
         setActivePlayer(1);
+        setDisabled(false);
     }
 
     useEffect(() => {
@@ -44,16 +47,14 @@ function App() {
                 setWinnerText('This is a draw. Try again');
             }
             setWinner(true);
-
-            setTimeout(() => {
-                resetGame();
-            }, 3500);
+            setDisabled(true);
         }
         }, [diceArray1, diceArray2, winner]);
 
 
     const rollDice = () =>{
         setShowDice(false);
+        setDisabled(true);
 
         setTimeout(() => {
             const diceNumber = Math.trunc(Math.random() * 6) + 1;
@@ -61,6 +62,7 @@ function App() {
             setDiceImageSource(`images/dice-${diceNumber}.png`);
             setShowDice(true);
             activePlayer === 1  ? setActivePlayer(2) : setActivePlayer(1);
+            setDisabled(false);
         }, 2000);
     }
 
@@ -95,12 +97,14 @@ function App() {
                     <img src='images/dice-gif.gif' className="dice-gif" width="180" alt="gif image" />
                 }
             </div>
-            <button className="reset-btn" onClick={newGame}>New Game</button>
-            {winner &&
-                <h2 className="winner-name">{winnerText}</h2>
-            }
+            <div className="winner-block">
+                {winner &&
+                    <h2 className="winner-name">{winnerText}</h2>
+                }
+            </div>
             <div className="btn-block">
-                <button className="roll-btn" onClick={rollDice}>Roll Dice!</button>
+                <button className={`roll-btn ${disabled ? 'disabled' : ''}` } onClick={rollDice}>Roll Dice!</button>
+                <button className="reset-btn" onClick={newGame}>New Game</button>
             </div>
         </div>
 
