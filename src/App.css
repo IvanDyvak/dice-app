@@ -120,7 +120,7 @@ img{
     transform: translateX(-50%);
 }
 .winner-name{
-    color: hsl(337deg 51% 39%);
+    color: #09203f;
     font-size: 2rem;
     font-weight: 800;
 }
