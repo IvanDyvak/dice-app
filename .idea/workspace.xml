@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="583bbfae-0834-4d61-ab0a-723a9197553f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dice-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dice-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/dice-gif.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/dice-gif.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
@@ -32,7 +34,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/OpenServer/domains/dice-app&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/OpenServer/domains/square-app-react&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -54,7 +56,9 @@
       <updated>1668282896326</updated>
       <workItem from="1668282897612" duration="16075000" />
       <workItem from="1668415388167" duration="2087000" />
-      <workItem from="1668514109310" duration="686000" />
+      <workItem from="1668514109310" duration="775000" />
+      <workItem from="1668699094064" duration="10380000" />
+      <workItem from="1668770952846" duration="10768000" />
     </task>
     <servers />
   </component>

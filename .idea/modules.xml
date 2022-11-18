@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/dice-app.iml" filepath="$PROJECT_DIR$/.idea/dice-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../square-app-react/.idea/square-app-react.iml" filepath="$PROJECT_DIR$/../square-app-react/.idea/square-app-react.iml" />
     </modules>
   </component>
 </project>

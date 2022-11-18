@@ -26,25 +26,46 @@ img{
     transform: rotate(360deg);
   }
 }
-.dice-image{
-    max-width: 100px;
-}
-/*.dice-gif{*/
-/*    max-width: 120px;*/
-/*}*/
-.score-line{
+.rules{
     text-align: center;
 }
-.player-block{
+.players-block{
+    position: relative;
     width: 100%;
-    max-width: 300px;
     margin: 10px auto;
     text-align: center;
-    height: 350px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 75px;
+}
+.players-block .player{
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    min-height: 175px;
+    border-radius: 9px;
+}
+.dice-image{
+    max-width: 100px;
+}
+.dice-gif{
+    max-width: 250px;
+}
+.score-line{
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 25%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
+    font-size: 1.4rem;
 }
 .player-block__img{
     display: flex;
@@ -52,18 +73,20 @@ img{
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 250px;
 }
-.btn-block{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px auto;
-    width: 200px;
+.player .name{
+    position: relative;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 .reset-btn,
 .roll-btn{
-    width: 95px;
+    width: 125px;
     position: relative;
     display: block;
     background: green;
@@ -71,14 +94,46 @@ img{
     border: none;
     border-radius: 5px;
     /*margin: auto;*/
-    padding: 8px 0;
+    padding: 15px 0;
     cursor: pointer;
     transition: all .3s;
+    box-shadow: 0px 0rem 5rem 17px rgb(0 0 0 / 25%);
 }
 .reset-btn{
+    position: absolute;
     background: tomato;
-    /*margin-top: 20px;*/
+    left: 50%;
+    top: 8.5rem;
+    transform: translateX(-50%);
+}
+.roll-btn{
+    margin: 20px auto;
 }
 .roll-btn:hover{
     background: lightgreen;
+}
+.active-player {
+    background-color: lightgray;
+}
+.winner-name{
+    position: absolute;
+    left: 50%;
+    top: 39%;
+    transform: translateX(-50%);
+    color: hsl(337deg 51% 39%);
+    font-size: 2rem;
+    font-weight: 800;
+}
+@media (max-width: 500px){
+    .player .name {
+        font-size: 2rem;
+    }
+    .winner-name {
+        top: 72%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .reset-btn {
+        top: 10.5rem;
+    }
 }
