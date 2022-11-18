@@ -47,7 +47,7 @@ function App() {
 
             setTimeout(() => {
                 resetGame();
-            }, 3000);
+            }, 3500);
         }
         }, [diceArray1, diceArray2, winner]);
 
@@ -92,7 +92,7 @@ function App() {
             <div className="player-block__img">
                 { showDice ?
                     <img src={diceImageSource} className="dice-image" style={styles}  alt="dice facet" /> :
-                    <img src='images/dice-gif.gif' className="dice-gif" width="250" alt="gif image" />
+                    <img src='images/dice-gif.gif' className="dice-gif" width="180" alt="gif image" />
                 }
             </div>
             <button className="reset-btn" onClick={newGame}>New Game</button>
