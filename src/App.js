@@ -55,6 +55,8 @@ function App() {
     const rollDice = () =>{
         setShowDice(false);
         setDisabled(true);
+        setDiceImageSource(`images/dice-gif.gif`);
+
 
         setTimeout(() => {
             const diceNumber = Math.trunc(Math.random() * 6) + 1;
@@ -92,10 +94,11 @@ function App() {
                 </div>
             </div>
             <div className="player-block__img">
-                { showDice ?
-                    <img src={diceImageSource} className="dice-image" style={styles}  alt="dice facet" /> :
-                    <img src='images/dice-gif.gif' className="dice-gif" width="180" alt="gif image" />
-                }
+                <img src={diceImageSource} className="dice-image" style={styles}  alt="dice facet" />
+                {/*{ showDice ?*/}
+                {/*    <img src={diceImageSource} className="dice-image" style={styles}  alt="dice facet" /> :*/}
+                {/*    <img src='images/dice-gif.gif' className="dice-gif" width="180" alt="gif image" />*/}
+                {/*}*/}
             </div>
             <div className="winner-block">
                 {winner &&
@@ -103,7 +106,7 @@ function App() {
                 }
             </div>
             <div className="btn-block">
-                <button className={`roll-btn ${disabled ? 'disabled' : ''}` } onClick={rollDice}>Roll Dice!</button>
+                <button className={`roll-btn ${disabled ? 'disabled' : ''}` } onClick={rollDice}>{!showDice ? 'Rolling...' : 'Roll Dice!'}</button>
                 <button className="reset-btn" onClick={newGame}>New Game</button>
             </div>
         </div>
