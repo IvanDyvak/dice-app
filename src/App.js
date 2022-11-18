@@ -61,7 +61,7 @@ function App() {
             setDiceImageSource(`images/dice-${diceNumber}.png`);
             setShowDice(true);
             activePlayer === 1  ? setActivePlayer(2) : setActivePlayer(1);
-        }, 500);
+        }, 2000);
     }
 
     const newGame = () =>{
